@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/form.css') }}">
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+<body id="IndexMainForm">
+<div class="container">
+    <div class="main-form">
+        <div class="main-div">
+            <div class="panel">
+                <h2>PyTechlag</h2>
+                <p>Please enter npm package and version</p>
+            </div>
+            <form id="mainForm" action="/" method="POST">
+
+                <div class="form-group">
+                    <input class="form-control" name="package" id="package" placeholder="Package">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control" name="version" id="version" placeholder="Version">
+                </div>
+
+                <div class="form-group">
+                    <select name="kind" class="form-control" id="kind">
+                      <option value="" disabled selected hidden>Kind</option>
+                      <option value="dependencies">Runtime</option>
+                      <option value="devDependencies">Development</option>
+                      <option value="both">Both</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <select name="dependencies" class="form-control" id="dependencies">
+                      <option value="" disabled selected hidden>Dependencies</option>
+                      <option value="direct">Direct</option>
+                      <option value="transitive">Transitive</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Go!</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>
