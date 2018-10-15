@@ -19,7 +19,7 @@
             <form id="mainForm" action="/" method="POST">
 
                 <div class="form-group">
-                    <input class="form-control" name="package" id="package" placeholder="Package">
+                    <input class="form-control" name="package" id="package" placeholder="Package" required>
                 </div>
 
                 <div class="form-group">
@@ -48,6 +48,14 @@
             </form>
         </div>
     </div>
+    {% if results %}
+        <div class="results-div">
+            <div class="panel">
+                <h1>Results</h1>
+            </div>
+            {{results | safe}}
+        </div>
+    {% endif %}
 </div>
 </div>
 

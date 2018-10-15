@@ -1,6 +1,7 @@
-body#IndexMainForm{ background-image:url("../img/background.jpg"); background-repeat:no-repeat; background-position:center; background-size:cover; padding:10px;}
+body#IndexMainForm{ background-color: #000000}
 
 .form-heading { color:#fff; font-size:23px;}
+.panel h1{ color:#444444; font-size:24px; margin:0 0 8px 0; text-align: center}
 .panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
 .panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px;}
 .main-form .form-control {
@@ -34,8 +35,8 @@ select {
   text-decoration: underline;
 }
 .main-form  .btn.btn-primary {
-  background: #f0ad4e none repeat scroll 0 0;
-  border-color: #f0ad4e;
+  background: #ED7F00 none repeat scroll 0 0;
+  border-color: #ED7F00;
   color: #ffffff;
   font-size: 14px;
   width: 100%;
@@ -46,7 +47,7 @@ select {
 .forgot {
   text-align: left; margin-bottom:30px;
 }
-.botto-text {
+.bottom-text {
   color: #ffffff;
   font-size: 14px;
   margin: auto;
@@ -56,3 +57,17 @@ select {
 }
 .back { text-align: left; margin-top:10px;}
 .back a {color: #444444; font-size: 13px;text-decoration: none;}
+
+.results-div {
+  background: #ffffff none repeat scroll 0 0;
+  color: #ffffff;
+  padding: 50px 50px 50px 50px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+}
+
+.table {
+    background: #ED7F00 none repeat scroll 0 0 !important;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+}

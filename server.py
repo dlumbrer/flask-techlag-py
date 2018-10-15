@@ -10,8 +10,10 @@ def basic_info(err=None):
     if request.method == 'POST':
         print("POST")
         tl = TechLag(package=request.form['package'], version=request.form['version'], kind=request.form["kind"])
-        tl.analyze()
-    return render_template('form.html', err=err)
+        results = tl.analyze().to_html(classes="table")
+    else:
+        results = ""
+    return render_template('form.html', results=results, err=err)
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug="True", port=5050)
